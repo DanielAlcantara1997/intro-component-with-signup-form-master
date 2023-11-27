@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body class="make-grid">
+   <main>
+    <article class="main-container | make-grid">
+      <div class="left-container | make-grid">
+
+        <h1 class="fw-bold">Learn to code by watching others</h1>
+
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable.</p> 
+      </div>
+      <div class="right-container | make-grid">
+
+        <div class="colored-box | make-grid">
+          <p><span class="fw-semibold">Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+
+       <form class="make-grid">
+
+         <div>
+           <img class="error-icon-show" src="./images/icon-error.svg" alt="error icon">
+           <input type="text" id="fname" name="firstname" placeholder="First Name">
+           <div class="error" id="fname-error">First name cannot be empty</div>
+         </div>
+
+         <div>
+           <img src="./images/icon-error.svg" alt="error icon">
+           <input type="text" id="lname" name="lastname" placeholder="Last Name">
+           <div class="error" id="lname-error">Last name cannot be empty</div>
+         </div>
+
+         <div>
+          <img src="./images/icon-error.svg" alt="error icon">
+           <input type="text" id="email" name="email" placeholder="Email Address">
+           <div class="error" id="email-error"></div>
+         </div>
+
+         <div>
+           <img src="./images/icon-error.svg" alt="error icon">
+           <input type="password" id="pwd" name="pwd" placeholder="Password">
+           <div class="error" id="pwd-error">Password cannot be empty</div>
+         </div>
+
+         <button type="submit">Claim your free trial</button>
+          
+         <p class="terms-and-conditions">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+
+       </form>
+
+      </div>
+    </article>
+  </main>
+ <script src="main.js"></script>
+</body>
+</html>
